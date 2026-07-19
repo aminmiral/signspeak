@@ -18,7 +18,7 @@ Turn the scaffold into a production-shaped codebase.
 - [x] GitHub Actions CI: ruff lint/format + pytest matrix (3.11/3.12); pre-commit hooks configured
 - [x] Config-driven thresholds and seeds (`configs/default.yaml`)
 
-**Remaining for exit:** CI green on an actual PR (verifiable after first push); recorded real-landmark `.npz` fixtures + golden predictions once the first real dataset exists (Phase 2).
+**Exit met:** CI green on main (first push, 2026-07-19 — lint + tests on Python 3.11/3.12). Recorded real-landmark `.npz` fixtures + golden predictions move to Phase 2 (need the first real dataset).
 
 **Exit criteria:** CI green on a PR; test suite runs with no camera; `pip install -e . && signspeak-train` reproduces the model from CSVs byte-for-byte given the seed.
 
